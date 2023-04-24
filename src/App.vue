@@ -1,10 +1,24 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <HelloWorld :prop = mm @click='se'></HelloWorld>
+  <h3>{{ num }}</h3>
+  <!-- <h3>{{ ns }}</h3> -->
 </template>
+
+<script setup>
+import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue'
+
+const mm = ref('from app page')
+const num = ref(0)
+// const ns = ref()
+
+// eslint-disable-next-line no-return-assign
+const se = () => (
+  // eslint-disable-next-line no-sequences
+  num.value++
+)
+
+</script>
 
 <style>
 #app {
