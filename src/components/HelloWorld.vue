@@ -39,7 +39,7 @@ const de = () => count2.a--
 const com = computed(() => count.value * 2)
 onMounted(() => { number.value = 10 })
 
-const prop = defineProps(['prop'])
+const prop = defineProps(['propa'])
 
 // const click = ref('hi')
 const emit = defineEmits(['click'])

@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld :prop = mm @click='se'></HelloWorld>
+  <HelloWorld :propa = mm @click='se'></HelloWorld>
   <h3>{{ num }}</h3>
   <!-- <h3>{{ ns }}</h3> -->
 </template>
